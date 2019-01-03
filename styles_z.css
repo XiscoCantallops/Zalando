@@ -1,0 +1,182 @@
+/*Generales*/
+*{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+html{font-size: 62.5%; }
+
+body{ 
+    margin: 0; 
+    font-family: 'Open Sans', sans-serif; 
+    }
+
+figure{margin: 0; padding: 0;}
+
+/*Logo*/
+figure.logo {
+/*    display: inline-block; */
+    float: left; 
+    
+    margin: 0; 
+    padding: 2rem 0 0 2rem;
+    
+    }
+
+/*Menú Compra*/
+div.menucarrito{
+/*    display: inline-block;     */
+    float: left;     
+    padding: 2rem;}
+
+div.menucarrito a{
+    display: inline-block; 
+    
+    text-align: center; 
+    margin-right: 3rem; 
+    font-size: 1rem; 
+    text-decoration: none; 
+    color: grey; 
+    text-transform: uppercase;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    
+}
+div.menucarrito a span {
+    display: block;}
+
+div.menucarrito a:hover{
+    border-top: 1px solid orangered; border-bottom: 1px solid orangered;}
+
+
+/*Nav*/
+nav{
+    width: 100vw; 
+    overflow: auto;    
+    border-top: 1px solid grey; 
+    border-bottom: 1px solid grey;
+   /* padding: 1rem;*/
+    }
+
+nav ul {
+    padding: 0 2rem 0 2rem;
+}
+
+nav ul li{ 
+    display: inline;
+    font-size: 1.2rem;
+    }
+
+nav ul li a:link    {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: grey;
+    padding: 0.5rem;    
+    }
+
+nav ul li a:hover    {
+    padding: 2rem;    
+    background-color: grey;
+    color: white;    
+    }
+
+/*  Columna Central*/
+/*Flexbox*/
+.container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  padding: 1rem;    
+/*  background:#ccc;    */
+}
+
+/* Articulos - Datos*/
+article{
+    width: 100%;    
+    padding: 2rem;
+     margin-bottom: 2rem; 
+    border-top: 0.1rem dotted ; 
+    border-bottom: 0.1rem dotted ; 
+    
+    display: inherit;
+} 
+
+article figure{
+    width: 40%;
+    margin: 0 auto;
+    background: grey;
+}
+
+article figure img{ 
+    width: 100%;
+    height: 100%;
+    
+    margin-right: 5%; 
+    vertical-align: bottom;  
+}
+
+article .descripcion {
+   width: 50%; 
+   margin: 0 auto;
+}
+
+article .descripcion h2{
+    font-size: 1.5rem; 
+    margin-top: 2rem;}
+
+article .descripcion h3{
+    font-size: 1.2rem; 
+    margin-top: -1.5rem; 
+    font-weight: normal;}
+
+article p.precio {
+    font-size: 1.5rem;
+    margin-top: -0.5rem;    
+   }
+
+article a.comprar:link{
+    background-color: orangered; 
+    padding: 1rem 4rem 1rem 4rem; 
+    color: white; 
+    text-decoration: none;}
+
+article a.comprar:hover{
+    background-color: grey; 
+    padding: 1rem; 
+    font-size: 1rem;
+}
+
+/*footer*/
+footer{
+    padding: 2rem; 100vw;  
+    margin-top:10rem; 
+    text-align: center;}
+
+/*Media Queries*/
+/*Tablet*/
+@media (min-width: 600px) {        
+  article {
+    width: 45%; 
+    margin-right: 2rem;
+    }    
+    
+  div.menucarrito{
+    float: right;     
+    padding: 2rem;}
+    
+}
+
+/*PC*/
+@media (min-width: 1000px) { 
+  article {
+      width: 30%;
+      margin-right: 2rem;
+    }
+    
+    div.menucarrito{
+    float: right;     
+    padding: 2rem;}
+
+}
